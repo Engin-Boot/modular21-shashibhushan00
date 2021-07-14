@@ -7,8 +7,8 @@ namespace TelCo.ColorCoder
 {
     class PrintAllPairColorCodes
     {
-        public static Color[] MajorColor = InitiateColorCoding.colorMapMajor;
-        public static Color[] MinorColor = InitiateColorCoding.colorMapMinor;
+        public static Color[] MajorColor = ColorMap.colorMapMajor;
+        public static Color[] MinorColor = ColorMap.colorMapMinor;
 
         public static void PrintAllColorCodes()
         {
