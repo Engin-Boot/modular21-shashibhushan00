@@ -48,7 +48,15 @@ namespace TelCo.ColorCoder
             Debug.Assert(pairNumber == 6);
 
             Console.WriteLine();
-            PrintAllPairColorCodes.PrintAllColorCodes();
+            //PrintAllPairColorCodes.PrintAllColorCodes();
+            Console.WriteLine("-------Testing-------\n");
+            TestingReferenceManual.TestReferenceManual();
+
+            PrintAllPairColorCodes.PrintAllColorCodes(new MethodsToPrintColors.PrintContentOnConsole());
+            MethodsToPrintColors.TestContentPrintedOnConsole testCodeOnConsole = new MethodsToPrintColors.TestContentPrintedOnConsole();
+            PrintAllPairColorCodes.PrintAllColorCodes(testCodeOnConsole);
+
+            Debug.Assert(testCodeOnConsole.CountOfContentPrintedOnConsole == 25);
         }
     }
 }
